@@ -1,9 +1,75 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:146.0) Gecko/20100101 Firefox/146.0" version="29.2.4">
   <diagram id="Lb8YTeYQRkjr3ELohPgB" name="Страница-2">
-    <mxGraphModel dx="1215" dy="641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2454" dy="1125" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Пакет(Packet)&lt;/div&gt;&lt;div&gt;IPacket&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="-90" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Client&lt;/div&gt;&amp;nbsp;- IClient" vertex="1">
+          <mxGeometry height="90" width="150" x="-300" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Server - IServer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="100" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="&lt;div&gt;User Server&lt;/div&gt;&lt;div&gt;Сервер, который использует протокол,&lt;/div&gt;&lt;div&gt;Использует объект-handler для обработки входящих соединений&lt;/div&gt;" vertex="1">
+          <mxGeometry height="280" width="280" x="40" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-5" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="User Client&lt;br&gt;Клиент, который использует протокол, обращается к серверу через клиента, встроенного в протокол" vertex="1">
+          <mxGeometry height="280" width="280" x="-365" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-7" edge="1" parent="1" source="15wd4EMHCKs7mt8yOVlD-2" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="15wd4EMHCKs7mt8yOVlD-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="60" y="520" as="sourcePoint" />
+            <mxPoint x="110" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-10" edge="1" parent="1" source="15wd4EMHCKs7mt8yOVlD-5" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="15wd4EMHCKs7mt8yOVlD-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-230" y="550" as="sourcePoint" />
+            <mxPoint x="-180" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-13" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Пользовательский клиент использует клиент протокола для:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Установления соединения с сервером&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Выполнение запроса к серверу&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="370" x="-760" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-14" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Пользовательский сервер использует сервер протокола для:&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Создания канала прослушивания&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Начало прослушивания&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Приостановка прослушивания&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Окончание прослушивания&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Обработка запросов от клиента&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="370" x="380" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-15" edge="1" parent="1" source="15wd4EMHCKs7mt8yOVlD-3" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="15wd4EMHCKs7mt8yOVlD-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="40" y="420" as="sourcePoint" />
+            <mxPoint x="290" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-16" edge="1" parent="1" source="15wd4EMHCKs7mt8yOVlD-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" target="15wd4EMHCKs7mt8yOVlD-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-240" y="340" as="sourcePoint" />
+            <mxPoint x="-190" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-17" edge="1" parent="1" source="15wd4EMHCKs7mt8yOVlD-3" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="15wd4EMHCKs7mt8yOVlD-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="190" y="300" as="sourcePoint" />
+            <mxPoint x="240" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-18" edge="1" parent="1" source="15wd4EMHCKs7mt8yOVlD-4" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="15wd4EMHCKs7mt8yOVlD-3" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="560" as="sourcePoint" />
+            <mxPoint x="250" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-19" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;IServer&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Работает в асинхронном режиме с неблокирующеми сокетами, использует пуллинг готовых к чтению записи каналов&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="300" x="210" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-20" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;IClient&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Работает в синхронном режиме с&amp;nbsp; долгоживущим сокетом, который имеет таймаут&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="-430" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="15wd4EMHCKs7mt8yOVlD-21" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;IPacket&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Пакет, который используется для передачи данных между клиентом и сервером. имеет бинарный формат полей, &quot;магическое число в начале&quot;&lt;/font&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="110" width="450" x="-240" y="70" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
